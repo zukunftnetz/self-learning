@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML练习</title>
+    <style>
+        p{
+            color:blue;
+            font-size: 24px;
+        }
+        k{
+            color:red;
+            font-size: 32px;
+        }
+        #element:hover{
+            background-color: orange;
+        }
+        .block{
+            color: yellowgreen;
+            width: 200px;
+            height: 100px;
+        }
+        .line{
+            color: aqua;
+            width: 100px;
+        }
+        .father{
+            height: 200px;
+            background-color: aliceblue;
+            border: 3px solid ;
+        }
+        .left-son{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: right;
+        }
+    </style>
+    <script> console.log('hello world head 内联');</script>
+</head>
+<body>
+    <h1>
+        开始标签 
+    </h1>
+    <h2>
+        一级标签 
+    </h2>
+    <table border="1">
+        <tr>
+            <th>column1</th>
+            <th>column2</th>
+        </tr>
+        <tr>
+            <td>line1_1</td>
+            <td>line1_2</td>
+        </tr>
+        <tr>
+            <td>line2_1</td>
+            <td>line2_2</td>
+        </tr>    
+    </table>
+    <h3>
+        二级标签
+    </h3>
+    <a href="http://www.baidu.com" target="_parent">链接百度</a>
+    <!-- <hr> -->
+    <!-- <img src="屏幕截图 2024-03-18 104351.png" alt="png cannot display" width="500"> -->
+    <div class="nav">
+        <a href="#">链接1</a>
+        <a href="#">链接2</a>
+    </div>
+    <div>
+        <h1>标题</h1>
+    </div>
+    <form action="">
+        <input type="text" placeholder="请输入内容">
+        <!-- <hr> -->
+        <br>
+        <label for="">姓名</label>
+    </form>
+    <p>这是一个css样本</p>
+    <h1 style="color: green;">这是一个内联样式</h1>
+    <k>这是一个css样本</k>
+    <p>123</p>
+    <h3 id="element">这是一个选择器</h3>
+    <div class="block">
+        这是一个块元素
+    </div>
+    <div class="block">
+        这是一个块元素
+    </div>
+    <span class="line">
+        这是一个行元素
+    </span>
+    <span class="line">
+        这是一个行元素
+    </span>
+    <!-- <br> -->
+    <img src="屏幕截图.png" alt="" width="200px">
+    <img src="屏幕截图.png" alt="" width="200px">
+    <div class = "father">
+        <div class = "left-son">左浮动</div>
+    </div>
+    <h1>JS导入方式</h1>
+    <script>
+        console.log('hello world body内联');
+        var i = 12;
+        let j = 24;
+        console.log(i + j);
+        let name = 'aaa';
+        console.log(name);
+    </script>
+    <script src = "./js/myscript.js"></script>
+
+    <div id = 'doc'>这是一个文档id</div>
+    <div class="paper">这是一个paper类</div>
+    <script>
+        var element_id = document.getElementById('doc');
+        console.log(element_id);
+
+        var element_class = document.getElementsByClassName('paper');
+        console.log(element_class);
+
+        element_id.innerHTML = "修改id名";
+    </script>
+</body>
+</html>
